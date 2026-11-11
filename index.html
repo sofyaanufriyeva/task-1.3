@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,10 @@
             <span>DevProfile</span>
         </div>
         <nav>
-            <ul>
-                <li><a>Профиль</a></li>
-                <li><a>Проекты</a></li>
-                <li><a>Контакты</a></li>
+            <ul> 
+                <li><a href="#profile">Профиль</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contacts">Контакты</a></li> <!--Раздел контактов добавится позже, на него повешу id="contacts"-->
             </ul>
         </nav>
         <div>
@@ -30,7 +30,7 @@
         </div>
     </header>
     <main>
-        <section> <!--Для будущей стилизации здесь множество div будет-->
+        <section id="profile"> <!--Для будущей стилизации здесь множество div будет-->
             <div>
                 <div>
                     <div>
@@ -51,7 +51,7 @@
                 <img src="images/image-1.jpg" alt="Картинка кода" width="100" height="100">
             </div>
         </section>
-        <section>
+        <section id="projects">
             <div>
                 <div>
                     <h2>Мои проекты</h2>
@@ -118,21 +118,27 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a>Профиль</a></li>
-                        <li><a>Проекты</a></li>
-                        <li><a>Контакты</a></li>
+                        <li><a href="#profile">Профиль</a></li>
+                        <li><a href="#projects">Проекты</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <div>
-                    <svg width="20" height="20">
-                        <use xlink:href="images/github.svg#github-icon"></use>
-                    </svg>
-                    <svg width="20" height="20">
-                        <use xlink:href="images/linkedin.svg#linkedin-icon"></use>
-                    </svg>
-                    <svg width="20" height="20">
-                        <use xlink:href="images/telegram.svg#telegram-icon"></use>
-                    </svg>
+                    <button>
+                        <svg width="20" height="20">
+                            <use xlink:href="images/github.svg#github-icon"></use>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg width="20" height="20">
+                            <use xlink:href="images/linkedin.svg#linkedin-icon"></use>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg width="20" height="20">
+                            <use xlink:href="images/telegram.svg#telegram-icon"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <span>© 2026 DevProfile. Все права защищены.</span>
